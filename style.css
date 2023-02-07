@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Roboto', sans-serif;
+    @apply bg-gray-50 leading-7 text-gray-900;
+  }
+
+  p {
+    @apply mb-6 max-w-2xl text-base;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Roboto Slab', serif;
+    @apply mb-5 leading-5;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  small {
+    @apply text-sm;
+  }
+
+  a {
+    @apply text-blue-500;
+  }
+}
+
+.btn {
+  @apply cursor-pointer rounded bg-blue-500 px-2 py-1 tracking-wider text-white shadow transition-all duration-300 ease-linear hover:bg-blue-700 hover:shadow-md;
+}
+
+.btn-hipster {
+  @apply bg-blue-200 text-blue-500 hover:bg-blue-700 hover:text-blue-200;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+.alert {
+  @apply mb-4 px-2 py-1;
+}
+
+.alert-danger {
+  @apply bg-red-200 text-red-700;
+}
+
+.alert-success {
+  @apply bg-green-200 text-green-700;
+}
+
+.form {
+  @apply mx-auto my-12 block w-11/12 max-w-screen-sm rounded bg-white py-8 px-10 shadow;
+}
+
+.form-label {
+  @apply mb-2 block text-sm tracking-wide;
+}
+
+.form-input,
+.form-textarea {
+  @apply w-full rounded border bg-gray-50 px-2 py-1;
+}
+
+.form-row {
+  @apply mb-4;
+}
+
+.form-textarea {
+  @apply h-28;
+}
+
+.form-alert {
+  @apply tracking-wide text-red-700;
+}
+
+.loading {
+  @apply mx-auto my-0 h-24 w-24 animate-spin rounded-full border-4 border-gray-400 border-t-blue-500;
+}
+
+.title {
+  @apply text-center;
+}
+
+.title h2 {
+  @apply mb-1;
+}
+
+.title-underline {
+  @apply my-0 mx-auto h-1 w-28 bg-blue-700;
+}
